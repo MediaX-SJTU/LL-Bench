@@ -63,8 +63,9 @@ into the evaluation instruction and jointly predicts:
 
 
 
-## ✅ To Do
+## 🧾 To Do
 
 -  Dataset
+-  Checkpoint
 -  Inference Code
--  Training Code and others: release upon publication
+-  Training Code
