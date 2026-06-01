@@ -56,11 +56,11 @@ into the evaluation instruction and jointly predicts:
 - a human-preference-aligned quality score;
 - a hallucination probability.
 
-<!-- TODO: add LL-Score method figure
+
 <p align="center">
   <img src="assets/ll_score_method.png" width="90%" alt="LL-Score method">
 </p>
--->
+
 
 
 ## ✅ To Do
