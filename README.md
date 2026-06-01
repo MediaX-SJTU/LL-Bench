@@ -1,6 +1,6 @@
 # LL-Bench: Rethinking Low-Level Vision Evaluation in the Era of Large-Scale Generative Models via Human Preferences
 
-This is the offical implementation of LL-Bench. 
+This is the offical implementation of LL-Bench. The full dataset and code will be released as soon as publication. 
 
 <p align="center">
   <img src="assets/llbench.png" width="95%" alt="LL-Bench overview">
@@ -62,52 +62,9 @@ into the evaluation instruction and jointly predicts:
 </p>
 -->
 
-### Inference Code
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Edit `configs/inference.yaml`:
-
-```yaml
-model_name_or_path: "/path/to/Qwen3-VL-8B-Instruct"
-checkpoint_dir: "/path/to/ll-score-checkpoint"
-checkpoint_step: -1
-device: "cuda"
-batch_size: 1
-```
-
-Prepare an input JSONL file. Each line is one candidate restored image:
-
-```json
-{"id": "sample_001", "task": "Raindrop Removal", "degraded_image": "/path/to/degraded.png", "restored_image": "/path/to/restored.png"}
-```
-
-Run inference:
-
-```bash
-python -m ll_score.infer \
-  --config configs/inference.yaml \
-  --input-jsonl examples/input.jsonl \
-  --output-jsonl outputs/predictions.jsonl
-```
-
-The output JSONL preserves the input fields and appends:
-
-- `quality_score`
-- `hallucination_prob`
 
 ## ✅ To Do
 
 -  Dataset
 -  Inference Code
 -  Training Code and others: release upon publication
-
-## Anonymous Review
-
-This repository is prepared for anonymous review. Author identities,
-institutional metadata, and final citation information are intentionally omitted
-during the review period.
