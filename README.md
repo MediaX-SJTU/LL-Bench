@@ -1,6 +1,6 @@
 # LL-Bench: Rethinking Low-Level Vision Evaluation in the Era of Large-Scale Generative Models via Human Preferences
 
-This is the offical implementation of LL-Bench. The full dataset and code will be released as soon as publication. 
+This is the official implementation of LL-Bench. The full dataset and code will be released upon publication. 
 
 <p align="center">
   <img src="assets/llbench.png" width="95%" alt="LL-Bench overview">
